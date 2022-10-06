@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ghaida/todo_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/ghaida/todo-list-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/ghaida/todo_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/ghaida/todo-list-app/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

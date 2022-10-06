@@ -1,4 +1,4 @@
-#Thu Oct 06 15:04:57 AST 2022
-base.0=/Users/ghaida/todo_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Oct 06 15:22:14 AST 2022
+base.0=/Users/ghaida/todo-list-app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     bool debugShowCheckedModeBanner = true;
+     bool debugShowCheckedModeBanner = false;
     return ChangeNotifierProvider (
       create: (context) => TaskData() ,
       child: MaterialApp(

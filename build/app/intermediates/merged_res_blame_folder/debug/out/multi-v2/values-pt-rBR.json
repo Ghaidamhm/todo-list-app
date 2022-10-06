@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ghaida/todo_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "/Users/ghaida/todo-list-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "/Users/ghaida/.gradle/caches/transforms-3/6b0c092eedb3707ee2110fcb7c7dd85e/transformed/jetified-play-services-basement-18.1.0/res/values-pt-rBR/values.xml",

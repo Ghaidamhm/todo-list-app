@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ghaida/todo_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/ghaida/todo-list-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/ghaida/.gradle/caches/transforms-3/65d7f496e0c0fefec8fa7195c7c8a034/transformed/jetified-window-1.0.0-beta04/res/values/values.xml",
@@ -23,20 +23,22 @@
                     }
                 },
                 {
-                    "source": "/Users/ghaida/todo_app/build/app/generated/res/google-services/debug/values/values.xml",
+                    "source": "/Users/ghaida/todo-list-app/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,712",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "194,276,380,489,609,707,782"
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
                     },
                     "to": {
-                        "startLines": "94,95,96,97,98,99,100",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5676,5820,5902,6006,6115,6235,6333",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "5815,5897,6001,6110,6230,6328,6403"
+                        "startLines": "102,107",
+                        "startColumns": "4,4",
+                        "startOffsets": "6479,6787",
+                        "endLines": "106,109",
+                        "endColumns": "12,12",
+                        "endOffsets": "6782,6951"
                     }
                 },
                 {
@@ -76,22 +78,20 @@
                     }
                 },
                 {
-                    "source": "/Users/ghaida/todo_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/ghaida/todo-list-app/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,712",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "194,276,380,489,609,707,782"
                     },
                     "to": {
-                        "startLines": "102,107",
-                        "startColumns": "4,4",
-                        "startOffsets": "6479,6787",
-                        "endLines": "106,109",
-                        "endColumns": "12,12",
-                        "endOffsets": "6782,6951"
+                        "startLines": "94,95,96,97,98,99,100",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5676,5820,5902,6006,6115,6235,6333",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "5815,5897,6001,6110,6230,6328,6403"
                     }
                 }
             ]
