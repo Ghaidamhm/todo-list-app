@@ -5,7 +5,5 @@ class Task {
   bool isDone;
   Task({required this.name , this.isDone =false});
 // TO CHANGE CHECKBOX STATE WHILE PRESSED
-  void doneChange(){
-    isDone = !isDone;
-  }
+
 }

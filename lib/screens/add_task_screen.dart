@@ -3,18 +3,21 @@
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+//import 'package:provider/provider.dart';
 import 'package:todo_app/models/task_data.dart';
+import 'package:get/instance_manager.dart';
+import 'package:todo_app/controllers/taskController.dart';
 
 class AddTaskScreen extends StatelessWidget {
-    final Function addTaskCallback;
+  final Function addTaskCallback;
+  final contrroller = Get.put<TaskController>(TaskController());
 
-   AddTaskScreen(this.addTaskCallback);
+  AddTaskScreen(this.addTaskCallback);
   @override
   Widget build(BuildContext context) {
     String? newTaskTitle;
     return Container(
-      color: Color.fromARGB(255, 237, 227, 231) ,
+      color: Color.fromARGB(255, 237, 227, 231),
       padding: EdgeInsets.all(30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -28,31 +31,27 @@ class AddTaskScreen extends StatelessWidget {
 // backgroundColor:  Color.fromARGB(255, 251, 230, 238),
             ),
           ),
-
           TextField(
-          
-          autofocus: true,
-          textAlign: TextAlign.center,
-       
-          onChanged: (newText) {
-             newTaskTitle=newText;
-          },
-           ),
-
-         
-          SizedBox(height: 30,),
-          
+            autofocus: true,
+            textAlign: TextAlign.center,
+            onChanged: (newText) {
+              newTaskTitle = newText;
+            },
+          ),
+          SizedBox(
+            height: 30,
+          ),
           TextButton(
-            
-            onPressed: (){
+            onPressed: () {
 // ACCESS TO ADD A TASK          //listen:false ===> TO REBUILD THE LIST
-              Provider.of<TaskData>(context , listen: false).addTask(newTaskTitle!);
-              Navigator.pop(context);
+              // Provider.of<TaskData>(context , listen: false).addTask(newTaskTitle!);
+              // Navigator.pop(context);
+              contrroller.addTask(newTaskTitle!);
             },
             child: Text('Add'),
             style: TextButton.styleFrom(
               backgroundColor: Color.fromARGB(207, 64, 54, 46),
-              primary:  Color.fromARGB(255, 237, 227, 231),
+              primary: Color.fromARGB(255, 237, 227, 231),
             ),
           ),
         ],

@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/models/task_data.dart';
 import 'package:todo_app/screens/add_task_screen.dart';
 import 'package:todo_app/widgets/tasks_list.dart';
-import 'package:provider/provider.dart';
-
+// import 'package:provider/provider.dart';
+import 'package:get/instance_manager.dart';
+import 'package:todo_app/controllers/taskController.dart';
 
 
 class TasksScreen extends StatelessWidget {
-  
+  final contrroller = Get.put<TaskController>(TaskController());
+
   @override
 
   Widget build(BuildContext context) {
@@ -30,6 +32,7 @@ class TasksScreen extends StatelessWidget {
                 
 // TO PRINT THE NEW TASK ON THE LIST PAGE
                 child: AddTaskScreen((newTaskTitle) {
+                
                   // setState(() {
                   // tasks.add(Task(name: newTaskTitle));
 // TO CLOSE THE ADD TASK WINDOW AUTOMATICALLY IN(SetState())
@@ -69,7 +72,7 @@ class TasksScreen extends StatelessWidget {
               ),
 // TASKS NUMBER
              Text(
-              '${Provider.of<TaskData>(context).tasks.length} Tasks'
+              '${contrroller.tasks.length} Tasks'
               , style: TextStyle(color:Color.fromARGB(207, 59, 27, 2),
              fontSize: 18,
               ),) ,

@@ -6,6 +6,7 @@ import 'screens/tasks_screen.dart';
 import 'package:provider/provider.dart';
   import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:get/get.dart';
 
 void main() {
 
@@ -23,13 +24,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      bool debugShowCheckedModeBanner = false;
-    return ChangeNotifierProvider (
-      create: (context) => TaskData() ,
-      child: MaterialApp(
+    return GetMaterialApp(
         theme: ThemeData(fontFamily: 'NoticiaText'),
         home: TasksScreen(),
       
-      ),
     );
   }
 }
